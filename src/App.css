@@ -3,9 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Calibri", sans-serif;
 }
-
+/* 
 .page {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ button {
 .next {
   background-color: #4a8fed;
   color: white;
-}
+} */
 
 /* p {
   font-size: 1.3rem;
@@ -51,4 +51,36 @@ button {
 
 .react-pdf__Page__textContent {
   display: none;
+}
+
+.react-pdf__Document .react-pdf__Page .react-pdf__Page__canvas {
+  display: none 
+}
+/* 
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .react-pdf__Document .react-pdf__Page canvas {
+    width: 500px !important;;
+    height: 500px !important;;
+  }
+ } */
+ 
+/* @media all and (min-width: 768px) and (max-width: 1024px) { 
+  .react-pdf__Document .react-pdf__Page canvas {
+    width: 500px !important;;
+    height: 500px !important;;
+  }
+} */
+ 
+@media all and (min-width: 480px) and (max-width: 720px) { 
+  .react-pdf__Document .react-pdf__Page canvas {
+    width: 440px !important;;
+    height: 570px !important;;
+  }
+}
+ 
+@media all and (max-width: 480px) { 
+  .react-pdf__Document .react-pdf__Page canvas {
+    width: 385px !important;
+    height: 530px !important;
+  }
 }
